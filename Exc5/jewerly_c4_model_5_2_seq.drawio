@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.11">
+  <diagram name="Page-1" id="q5gKrhV2WKv8pvfnoQvh">
+    <mxGraphModel dx="1147" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-1" value="MES API" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="110" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-2" value="MES cache" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="400" y="160" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-13" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="zq0s3ArbQt2my7Wv45CO-2">
+          <mxGeometry x="45" y="60" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-16" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="zq0s3ArbQt2my7Wv45CO-2">
+          <mxGeometry x="44" y="140" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-4" value="MES db" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="590" y="160" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-5" value="MES API" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="430" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-6" value="MES cache" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="430" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-7" value="MES db" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="595" y="430" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-14" value="get newest orders" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" edge="1" target="zq0s3ArbQt2my7Wv45CO-13" parent="1" source="zq0s3ArbQt2my7Wv45CO-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="255" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-15" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=-5;" edge="1" source="zq0s3ArbQt2my7Wv45CO-13" parent="1" target="zq0s3ArbQt2my7Wv45CO-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-17" value="set order status/create new order" style="html=1;verticalAlign=bottom;startArrow=oval;endArrow=block;startSize=8;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" edge="1" target="zq0s3ArbQt2my7Wv45CO-16" parent="1" source="zq0s3ArbQt2my7Wv45CO-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="374" y="285" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-20" value="set order status/create new order" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;curved=0;rounded=0;" edge="1" parent="1" target="zq0s3ArbQt2my7Wv45CO-4">
+          <mxGeometry width="60" relative="1" as="geometry">
+            <mxPoint x="450" y="320" as="sourcePoint" />
+            <mxPoint x="510" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-21" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1" source="zq0s3ArbQt2my7Wv45CO-4" target="zq0s3ArbQt2my7Wv45CO-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="610" y="360" as="sourcePoint" />
+            <mxPoint x="530" y="360" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-22" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="444" y="380" as="sourcePoint" />
+            <mxPoint x="274.70000000000005" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zq0s3ArbQt2my7Wv45CO-23" value="&lt;div&gt;Запись:&lt;/div&gt;1. MES API получает от RabbitMQ сообщение о том, что создан заказ (или изменен статус заказа)&lt;div&gt;2. Кладет заказ в MES cache по номеру заказа.&lt;/div&gt;&lt;div&gt;3. MES cache синхронно кладет заказ&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;в MES db.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;4. MES cache получает ответ от MES db об успехе&lt;/div&gt;&lt;div&gt;5. MES API получает ответ от MES cache об успехе&lt;/div&gt;&lt;div&gt;6. MES API помечает сообщение из RabbitMQ как обработанное.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Чтение:&lt;/div&gt;&lt;div&gt;1. MES API получает запрос на список последних созданных заказов. Он идет в MES cache.&lt;/div&gt;&lt;div&gt;2. MES cache отдает ответ.&lt;/div&gt;&lt;div&gt;3. MES API возвращает список последних созданных заказов.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry y="110" width="200" height="490" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
